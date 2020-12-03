@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    
+}
+.dino {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image: url("../images/dino.png");
+}
+
+.cactus {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 3000px;
+    background-image: url("../images/cactus.png");
+}
+
+.endGame {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    background-color: rgba(5, 5, 5, 0.7);
+}
+
+h1 {
+    margin: 20% auto;
+    text-align: center;
+    color: #BBB;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 7000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+.background {
+    width: 100%;
+    height: 200px;
+    background: rgba(255, 255, 255, 1);
+    animation: slideright 600s infinite linear;
+    background-image: url("../images/background.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
